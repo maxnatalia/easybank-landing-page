@@ -24,7 +24,6 @@ export const BackgroundIntro = styled.div`
 
     @media (max-width: 767px) {
         background-image: url("${bgmobile}");
-        width: 100%;
         text-align: center;
     }
   
