@@ -1,5 +1,5 @@
-import { linksData } from "./linksData";
-import { StyledFooter, Logo, IconContainer, LinksContainer, Button, Info, IconFacebook, IconInstagram, IconPinterest, IconTwitter, IconYoutube, WrapperLinks,StyledLink } from "./styled";
+import { StyledFooter, Logo, IconContainer, LinksContainer, Info, IconFacebook, IconInstagram, IconPinterest, IconTwitter, IconYoutube, WrapperLinks, StyledLink, Wrapper } from "./styled";
+import { Button } from "../Button/Button";
 
 const Footer = () => {
     return (
@@ -28,14 +28,14 @@ const Footer = () => {
                     </WrapperLinks>
                 </LinksContainer>
             </div>
-            <div>
+            <Wrapper>
                 <Button>
                     Request Invite
                 </Button>
                 <Info>
                     © Easybank. All Rights Reserved
                 </Info>
-            </div>
+            </Wrapper>
 
         </StyledFooter>);
 };
