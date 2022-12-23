@@ -22,10 +22,6 @@ export const StyledFooter = styled.footer`
 
 export const Logo = styled(LogoIcon)`
     margin: 20px;
-    & path{
-        fill: white;
-       
-    }   
 `;
 
 export const IconFacebook = styled(IconF)`
@@ -54,18 +50,20 @@ export const IconContainer = styled.div`
 
 export const LinksContainer = styled.div`
      color: ${({ theme }) => theme.colors.white};
-     display: grid;
-     grid-template-columns: 1fr 1fr;
-
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     max-width: 300px;
+     margin: 20px;
+   
      @media (max-width: 767px) {
-        grid-template-columns: 1fr;
+        flex-direction: column;
+        margin: auto;
     }
-
 `;
-
-export const Button = styled.button`
+export const Wrapper = styled.div`
+    margin: 20px;
 `;
-
 export const Info = styled.p`
     color: ${({ theme }) => theme.colors.white};
 `;
@@ -77,4 +75,8 @@ export const WrapperLinks = styled.div`
 `;
 
 export const StyledLink = styled(Link)`
+    text-decoration: none;
+    color: ${({ theme }) => theme.colors.white};
+    padding: 5px 10px;
+    cursor: pointer;
 `;
