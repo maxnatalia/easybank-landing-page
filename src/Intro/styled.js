@@ -24,18 +24,21 @@ export const BackgroundIntro = styled.div`
 
     @media (max-width: 767px) {
         background-image: url("${bgmobile}");
-        text-align: center;
+        margin: 0 auto;
+        width: 100vw;
     }
   
 `;
+
 export const Image = styled.img`
     z-index: 30;
     position: sticky;
-    transform: translateY(120px) translateX(220px);
+    transform: translateY(80px) translateX(220px);
 
     @media (max-width: 767px) {
-        width: 320px;
-        transform: none;
+        width: 100%;
+        text-align: center;
+        transform: unset;
     }
 `;
 
@@ -72,20 +75,4 @@ export const Content = styled.p`
     }
 `;
 
-export const Button = styled.button`
-    padding: 10px 20px;
-    border-radius: 25px;
-    color: ${({ theme }) => theme.colors.white};
-    border: none;
-    background: linear-gradient(90deg, rgba(49,211,92,1) 0%, rgba(43,183,218,1) 100%);
-    cursor: pointer;
-    width: max-content;
 
-    &:hover {
-        filter: brightness(110%);
-    }
-
-    @media (max-width: 767px) {
-       align-self: center;
-    }
-`;
