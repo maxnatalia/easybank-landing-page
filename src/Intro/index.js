@@ -1,4 +1,5 @@
-import { BackgroundIntro, Image, IntroWrapper, Container, Title, Content, Button } from "./styled";
+import { BackgroundIntro, Image, IntroWrapper, Container, Title, Content } from "./styled";
+import { Button } from "../Button/Button";
 import mockup from "./image-mockups.png";
 
 const Intro = () => {
