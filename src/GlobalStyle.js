@@ -5,15 +5,16 @@ export const GlobalStyle = createGlobalStyle`
     ${normalize}
 
     html {
-    box-sizing: border-box;
+        box-sizing: border-box;
     }
 
-    *, ::after, ::before {
-    box-sizing: inherit;
+        *, ::after, ::before {
+        box-sizing: inherit;
     }
 
     body {
         font-family: 'Public Sans', sans-serif;
         font-size: 18px;
+        overflow-x: hidden;
     }
 `;
