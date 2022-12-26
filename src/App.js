@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Intro from "./Intro";
+import Offering from "./Offering";
+import Articles from "./Articles";
+import Footer from "./Footer";
+import Navigation from "./Navigation";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+
+      <Router>
+        <Navigation />
+        <Intro />
+        <Offering />
+        <Articles />
+        <Routes>
+          <Route path="/" element={<Articles />} />
+        </Routes>
+        <Footer />
+      </Router>
+      <div>
+        
+
+        
+
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noreferrer">Frontend Mentor</a>.
+        Coded by Natalia Mazur-Żurek.
+      </div>
+    </>
   );
-}
+};
 
 export default App;
