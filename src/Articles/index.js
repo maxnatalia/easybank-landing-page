@@ -15,7 +15,8 @@ const Articles = () => {
                     </Article>
                 )}
             </Container>
-        </ArticleContainer>);
+        </ArticleContainer>
+    );
 };
 
 export default Articles;
