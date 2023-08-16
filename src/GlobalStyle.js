@@ -16,5 +16,6 @@ export const GlobalStyle = createGlobalStyle`
         font-family: 'Public Sans', sans-serif;
         font-size: 18px;
         overflow-x: hidden;
+        background-color: ${({ theme }) => theme.colors.veryLightGray};
     }
 `;
