@@ -15,7 +15,6 @@ export const Wrapper = styled.div`
     align-items: center;
 
     @media (max-width: 1199px) {
-        height: 590px;
         flex-direction: column-reverse;
     }
 `;
@@ -61,24 +60,29 @@ export const BoxImage = styled.div`
     background-position: -26px -255px;
 
     @media (max-width: 1199px) {
+        /* margin-top: 60px; */
         background-image: url("${bgmobile}");
         background-size: cover;
         background-position: center center;
+    }
+
+    @media (max-width: 479px) {
+        /* margin-top: 40px; */
     }
 `;
 
 export const PhoneImage = styled.div`
     width: 100%;
-    height: 118%;
+    height: 120%;
     background-image: url("${mockup}");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 132px 70%;
+    background-position: 132px 80%;
 
     @media (max-width: 1199px) {
         height: 100%;
         background-size: contain;
-        background-position: center center;
+        background-position: center;
     }
 
     @media (max-width: 479px) {
