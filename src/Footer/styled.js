@@ -1,82 +1,121 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
-import { ReactComponent as LogoIcon } from "./logo.svg";
-import { ReactComponent as IconF } from "./icon-facebook.svg";
-import { ReactComponent as IconY } from "./icon-youtube.svg";
-import { ReactComponent as IconT } from "./icon-twitter.svg";
-import { ReactComponent as IconP } from "./icon-pinterest.svg";
-import { ReactComponent as IconI } from "./icon-instagram.svg";
 
 export const StyledFooter = styled.footer`
+    width: 100%;
     background-color: ${({ theme }) => theme.colors.darkBlue};
+`;
+
+export const Container = styled.div`
+    max-width: 1270px;
+    margin: 0 auto;
+    padding: 40px 20px 0 20px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 15% 55% 30%;
+    grid-template-rows: repeat(2, 1fr);
 
-    @media (max-width: 767px) {
+    @media (max-width: 991px) {
+        padding: 30px 10px 0 10px;
         grid-template-columns: 1fr;
-        text-align: center;
+        grid-gap: 20px;
+        align-items: center;
+        justify-items: center;
     }
-    
-    
 `;
-
-export const Logo = styled(LogoIcon)`
-    margin: 20px;
-`;
-
-export const IconFacebook = styled(IconF)`
-    
-`;
-export const IconYoutube = styled(IconY)`
-`;
-export const IconTwitter = styled(IconT)`
-`;
-export const IconPinterest = styled(IconP)`
-`;
-export const IconInstagram = styled(IconI)`
-`;
-
 
 export const IconContainer = styled.div`
-    max-width: 250px;
-    padding: 20px;
+    grid-column: 1;
     display: flex;
-    justify-content: space-around;
-    
-    @media (max-width: 767px) {
-        margin: 0 auto;
+    justify-content: flex-start;
+    gap: 10px;
+
+    @media (max-width: 991px) {
+        grid-row: 2;
+        grid-gap: 20px;
+        margin-top: 10px;
+    }
+`;
+
+export const styledLogo = (IconLogo) => styled(IconLogo)`
+    cursor: pointer;
+
+    & path {
+        transition: all .3s ease-in-out;
+        fill: ${({ theme }) => theme.colors.white};
+    }
+
+    &:hover {
+        & path {
+            fill: ${({ theme }) => theme.colors.limeGreen};
+        }
     }
 `;
 
 export const LinksContainer = styled.div`
-     color: ${({ theme }) => theme.colors.white};
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     max-width: 300px;
-     margin: 20px;
-   
-     @media (max-width: 767px) {
-        flex-direction: column;
-        margin: auto;
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    justify-self: center;
+    color: ${({ theme }) => theme.colors.white};
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @media (max-width: 991px) {
+        grid-column: 1;
+        grid-row: 3;
+        grid-template-columns: 1fr;
+        text-align: center;
     }
 `;
-export const Wrapper = styled.div`
-    margin: 20px;
-`;
-export const Info = styled.p`
-    color: ${({ theme }) => theme.colors.white};
-`;
 
-export const WrapperLinks = styled.div`
-    display: flex;
-    flex-direction: column;
-
-`;
-
-export const StyledLink = styled(Link)`
+export const StyledLink = styled.a`
     text-decoration: none;
     color: ${({ theme }) => theme.colors.white};
     padding: 5px 10px;
     cursor: pointer;
+    transition: all .3s ease-in;
+
+    &:hover {
+        color: ${({ theme }) => theme.colors.limeGreen};
+    }
+`;
+
+export const ButtonWrapper = styled.div`
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: flex-end;
+
+    @media (max-width: 991px) {
+        grid-column: 1;
+        grid-row: 4;
+        justify-self: center;
+    }
+`;
+
+export const Info = styled.p`
+    color: ${({ theme }) => theme.colors.white};
+    grid-column: 3;
+    grid-row: 2;
+    line-height: 1.6;
+    justify-self: flex-end;
+
+    @media (max-width: 991px) {
+        grid-column: 1;
+        grid-row: 5;
+        justify-self: center;
+    }
+`;
+
+export const ExtraInfo = styled.p`
+    grid-column: 1 / span 3;
+    margin-top: 20px;
+    color: ${({ theme }) => theme.colors.white};
+    white-space: wrap;
+
+    a {
+        color: ${({ theme }) => theme.colors.limeGreen};
+        transition: all .3s ease-in;
+
+        &:hover {
+            color: ${({ theme }) => theme.colors.white};
+        }
+    }
 `;
