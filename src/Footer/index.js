@@ -1,43 +1,61 @@
-import { StyledFooter, Logo, IconContainer, LinksContainer, Info, IconFacebook, IconInstagram, IconPinterest, IconTwitter, IconYoutube, WrapperLinks, StyledLink, Wrapper } from "./styled";
-import { Button } from "../Button/Button";
+import Button from "../Button";
+import { ReactComponent as Logo } from "./logo.svg";
+import { linksData, socialMedia } from "./data";
+import {
+    StyledFooter,
+    IconContainer,
+    LinksContainer,
+    Info,
+    Container,
+    StyledLink,
+    ButtonWrapper,
+    ExtraInfo
+} from "./styled";
 
 const Footer = () => {
     return (
         <StyledFooter>
-            <div>
+            <Container>
                 <Logo />
                 <IconContainer>
-                    <IconFacebook />
-                    <IconInstagram />
-                    <IconPinterest />
-                    <IconTwitter />
-                    <IconYoutube />
+                    {socialMedia.map(({ name, link, IconLogo }) => <a
+                        key={name}
+                        href={link}
+                        target="_blank"
+                        rel="noreferrer">
+                        <IconLogo title={name} />
+                    </a>
+                    )}
                 </IconContainer>
-            </div>
-            <div>
                 <LinksContainer>
-                    <WrapperLinks>
-                        <StyledLink to='/' >About Us</StyledLink>
-                        <StyledLink to='/'>Contact</StyledLink>
-                        <StyledLink to='/'>Blog</StyledLink>
-                    </WrapperLinks>
-                    <WrapperLinks>
-                        <StyledLink to='/'>Careers</StyledLink>
-                        <StyledLink to='/'>Support</StyledLink>
-                        <StyledLink to='/'>Privacy Policy</StyledLink>
-                    </WrapperLinks>
+                    {linksData.map((name, index) => <StyledLink
+                        key={`${index} - ${name}`}
+                        href="/"
+                    >
+                        {name}
+                    </StyledLink>
+                    )}
                 </LinksContainer>
-            </div>
-            <Wrapper>
-                <Button>
-                    Request Invite
-                </Button>
+                <ButtonWrapper>
+                    <Button />
+                </ButtonWrapper>
                 <Info>
-                    © Easybank. All Rights Reserved
+                    © Easybank. All Rights Reserved.
                 </Info>
-            </Wrapper>
-
-        </StyledFooter>);
+                <ExtraInfo>
+                    Challenge by
+                    <a
+                        href="https://www.frontendmentor.io?ref=challenge"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        Frontend Mentor
+                    </a>.
+                    Coded by Natalia Mazur-Żurek.
+                </ExtraInfo>
+            </Container>
+        </StyledFooter>
+    );
 };
 
 export default Footer;
