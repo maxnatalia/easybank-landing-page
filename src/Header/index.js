@@ -1,5 +1,13 @@
-import { BoxContent, BoxImage, Content, PhoneImage, StyledHeader, Title, Wrapper } from "./styled";
-import { Button } from "../Button/Button";
+import Button from "../Button";
+import {
+    BoxContent,
+    BoxImage,
+    Content,
+    PhoneImage,
+    StyledHeader,
+    Title,
+    Wrapper
+} from "./styled";
 
 const Header = () => {
     return (
@@ -13,9 +21,7 @@ const Header = () => {
                         Take your financial life online. Your Easybank account will be a one-stop-shop
                         for spending, saving, budgeting, investing, and much more.
                     </Content>
-                    <Button>
-                        Request Invite
-                    </Button>
+                    <Button />
                 </BoxContent>
                 <BoxImage>
                     <PhoneImage />
