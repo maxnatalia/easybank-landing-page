@@ -9,8 +9,8 @@ export const StyledHeader = styled.header`
 
 export const Wrapper = styled.div`
     max-width: 1270px;
-    height: 670px;
     margin: 0 auto;
+    height: 670px;
     display: flex;
     align-items: center;
 
@@ -26,6 +26,7 @@ export const BoxContent = styled.div`
     @media (max-width: 1199px) {
         text-align: center;
         padding: 10px;
+        margin-bottom: 60px;
     }
 `;
 
@@ -60,14 +61,9 @@ export const BoxImage = styled.div`
     background-position: -26px -255px;
 
     @media (max-width: 1199px) {
-        /* margin-top: 60px; */
         background-image: url("${bgmobile}");
         background-size: cover;
         background-position: center center;
-    }
-
-    @media (max-width: 479px) {
-        /* margin-top: 40px; */
     }
 `;
 
@@ -80,13 +76,13 @@ export const PhoneImage = styled.div`
     background-position: 132px 80%;
 
     @media (max-width: 1199px) {
-        height: 100%;
+        height: 104%;
         background-size: contain;
         background-position: center;
     }
 
     @media (max-width: 479px) {
-        height: 100%;
+        height: 92%;
         background-size: cover;
         background-position: center bottom;
     }
