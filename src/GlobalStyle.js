@@ -9,13 +9,13 @@ export const GlobalStyle = createGlobalStyle`
     }
 
         *, ::after, ::before {
-        box-sizing: inherit;
+            box-sizing: inherit;
     }
 
     body {
         font-family: 'Public Sans', sans-serif;
         font-size: 18px;
-        overflow-x: hidden;
         background-color: ${({ theme }) => theme.colors.veryLightGray};
+        overflow-x: hidden;
     }
 `;
