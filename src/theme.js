@@ -8,4 +8,7 @@ export const theme = {
         veryLightGray: "hsl(0, 0%, 98%)",
         white: "hsl(0, 0%, 100%)",
     },
+    gradient: {
+        main: "linear-gradient(90deg, hsl(136, 65%, 51%) 0%, hsl(192, 70%, 51%) 100%);"
+    }
 };
