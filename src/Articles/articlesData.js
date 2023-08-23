@@ -6,14 +6,14 @@ import confetti from "./image-confetti.jpg";
 export const articlesData = [
     {
         id: 1,
-        image: restaurant,
+        image: currency,
         person: "By Claire Robinson",
         title: "Receive money in any currency with no fees",
         content: "The world is getting smaller and we’re becoming more mobile. So why should you be forced to only receive money in a single …",
     },
     {
         id: 2,
-        image: currency,
+        image: restaurant,
         person: "By Wilson Hutton",
         title: "Treat yourself without worrying about money",
         content: "Our simple budgeting feature allows you to separate out your spending and set realistic limits each month. That means you …",
