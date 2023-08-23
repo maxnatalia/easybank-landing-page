@@ -43,7 +43,7 @@ const Footer = () => {
                     © Easybank. All Rights Reserved.
                 </Info>
                 <ExtraInfo>
-                    Challenge by
+                    Challenge by{" "}
                     <a
                         href="https://www.frontendmentor.io?ref=challenge"
                         target="_blank"

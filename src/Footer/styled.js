@@ -106,16 +106,21 @@ export const Info = styled.p`
 
 export const ExtraInfo = styled.p`
     grid-column: 1 / span 3;
-    margin-top: 20px;
+    padding-top: 20px;
+    font-size: 16px;
     color: ${({ theme }) => theme.colors.white};
-    white-space: wrap;
+    border-top: 1px solid ${({ theme }) => theme.colors.white};
 
-    a {
+    & a {
         color: ${({ theme }) => theme.colors.limeGreen};
         transition: all .3s ease-in;
 
         &:hover {
             color: ${({ theme }) => theme.colors.white};
         }
+    }
+
+    @media (max-width: 991px) {
+        grid-column: 1;
     }
 `;
