@@ -1,5 +1,10 @@
-import React from 'react'
-import { Info, Section, Title, Wrapper } from './styled'
+import {
+    Info,
+    Section,
+    Title,
+    Wrapper,
+    Container
+} from './styled'
 
 const SectionLayout = ({ title, backgroundColor, info, children }) => {
     return (
@@ -7,7 +12,9 @@ const SectionLayout = ({ title, backgroundColor, info, children }) => {
             <Wrapper>
                 <Title>{title}</Title>
                 {info && <Info>{info}</Info>}
-                {children}
+                <Container>
+                    {children}
+                </Container>
             </Wrapper>
         </Section>
     )
