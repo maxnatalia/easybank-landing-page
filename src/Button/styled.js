@@ -4,7 +4,7 @@ export const StyledButton = styled.button`
     padding: 10px 20px;
     border: none;
     border-radius: 25px;
-    background: linear-gradient(90deg, ${({ theme }) => theme.colors.limeGreen} 0%, ${({ theme }) => theme.colors.brightCyan} 100%);
+    background: ${({ theme }) => theme.gradient.main};
     font-size: 16px;
     color: ${({ theme }) => theme.colors.white};
     cursor: pointer;
