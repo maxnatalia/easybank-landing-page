@@ -1,6 +1,13 @@
-import { articlesData } from "./articlesData";
 import SectionLayout from "../SectionLayout";
-import { Article, Image, Author, Subtitle, Content, Box } from "./styled";
+import { articlesData } from "./articlesData";
+import {
+    Article,
+    Image,
+    Author,
+    Subtitle,
+    Content,
+    Box
+} from "./styled";
 
 const Articles = () => {
     return (
@@ -10,7 +17,9 @@ const Articles = () => {
                     <Image src={image} alt={title} />
                     <Box>
                         <Author>{person}</Author>
-                        <Subtitle as="a" href="/">{title}</Subtitle>
+                        <Subtitle as="a" href="/">
+                            {title}
+                        </Subtitle>
                         <Content>{content}</Content>
                     </Box>
                 </Article>
