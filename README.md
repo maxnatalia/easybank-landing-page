@@ -1,7 +1,38 @@
-# Getting Started with Create React App
+# Frontend Mentor Challenge - Easybank - Landing Page
+
+This is my completed project for the [Frontend Mentor](https://frontendmentor.io) challenge. This project has been built following the provided design, and it is responsive to different screen sizes.
+
+The task of this project was to recreate the look and feel of the provided design from Frontend Mentor.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-Frontend Mentor Challenge - [Easybank - Landing Page](https://maxnatalia.github.io/easybank-landing-page).
+
+## Demo
+
+[Here you can see page - Easybank - Landing Page](https://maxnatalia.github.io/easybank-landing-page).
+
+## Preview
+
+![easybank.jpg](easybank.jpg)
+
+## Technologies
+
+I used the following technologies during the project:
+
+- HTML
+- CSS (utilizing Flexbox/Grid for layout)
+- JS
+- React
+- Styled Components
+
+## Summary
+
+This project was an excellent opportunity to apply practical knowledge of creating responsive user interfaces and implementing a design based on specifications. Through this task, I had the chance to enhance my skills.
+
+If you have any questions or feedback regarding this project, I would be glad to hear from you. You can contact me via nataliamazur1988@gmail.com or visit my social media profiles.
+
+Thank you for reviewing my project!
+
+_This project was completed as a part of the Frontend Mentor challenge. For more information about Frontend Mentor, you can visit [Frontend Mentor](https://frontendmentor.io)._
 
 ## Available Scripts
 
