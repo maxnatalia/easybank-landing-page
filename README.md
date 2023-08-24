@@ -8,7 +8,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Demo
 
-[Here you can see page - Easybank - Landing Page](https://maxnatalia.github.io/easybank-landing-page).
+[Here you can see DEMO page - Easybank - Landing Page](https://maxnatalia.github.io/easybank-landing-page).
+
+[Solution in Frontend Mentor Page](https://www.frontendmentor.io/solutions/responsive-easybank-landing-page-2qAe5Vvg4t).
 
 ## Preview
 
