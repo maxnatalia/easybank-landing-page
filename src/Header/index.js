@@ -11,7 +11,7 @@ import {
 
 const Header = () => {
     return (
-        <StyledHeader>
+        <StyledHeader id="hero">
             <Wrapper>
                 <BoxContent>
                     <Title>
