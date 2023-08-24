@@ -1,22 +1,22 @@
 export const navigationLinks = [
     {
         name: "Home",
-        href: "/"
+        href: "#hero"
     },
     {
         name: "About",
-        href: "/"
+        href: "#hero"
     },
     {
         name: "Contact",
-        href: "/"
+        href: "#hero"
     },
     {
         name: "Blog",
-        href: "/"
+        href: "#hero"
     },
     {
         name: "Careers",
-        href: "/"
+        href: "#hero"
     },
 ]
