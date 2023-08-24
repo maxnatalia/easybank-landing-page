@@ -27,7 +27,7 @@ export const Author = styled.p`
     color: ${({ theme }) => theme.colors.grayishBlue};
 `;
 
-export const Subtitle = styled.h3`
+export const Subtitle = styled.a`
     display: block;
     margin: 10px 0;
     letter-spacing: .5px;

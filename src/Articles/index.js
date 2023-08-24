@@ -17,7 +17,7 @@ const Articles = () => {
                     <Image src={image} alt={title} />
                     <Box>
                         <Author>{person}</Author>
-                        <Subtitle as="a" href="#hero">
+                        <Subtitle role="h3" href="#hero">
                             {title}
                         </Subtitle>
                         <Content>{content}</Content>
