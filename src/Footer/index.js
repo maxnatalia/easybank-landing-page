@@ -30,7 +30,7 @@ const Footer = () => {
                 <LinksContainer>
                     {linksData.map((name, index) => <StyledLink
                         key={`${index} - ${name}`}
-                        href="/"
+                        href="#hero"
                     >
                         {name}
                     </StyledLink>
